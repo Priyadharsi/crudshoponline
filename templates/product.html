@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>product_name</th>
+            <th>price</th>
+        </tr>
+        {%for i in data %}
+        <tr>
+            <td>{{i.product_name}}</td>
+            <td>{{i.price}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
